@@ -27,9 +27,9 @@ const NameWrapper = () => {
     console.log(getValues());
   }
   return (
-    <div onSubmit={handleSubmit(onSubmit)}>
+    <div >
       <FormProvider {...methods}>
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <FirstName />
           <SecondName />
           <button type='submit'>View the values</button>
